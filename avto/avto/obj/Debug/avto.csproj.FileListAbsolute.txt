@@ -17,3 +17,6 @@ C:\Users\Лёшка\documents\visual studio 2015\Projects\avto\avto\obj\Debug\av
 C:\Users\Лёшка\documents\visual studio 2015\Projects\avto\avto\obj\Debug\avto.exe
 C:\Users\Лёшка\documents\visual studio 2015\Projects\avto\avto\obj\Debug\avto.pdb
 C:\Users\Лёшка\documents\visual studio 2015\Projects\avto\avto\obj\Debug\App.baml
+E:\УЧЁБА\hunter\avto\avto\bin\Debug\avto.exe.config
+E:\УЧЁБА\hunter\avto\avto\obj\Debug\avto.exe
+E:\УЧЁБА\hunter\avto\avto\obj\Debug\avto.pdb

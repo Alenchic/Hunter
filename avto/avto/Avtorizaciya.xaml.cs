@@ -75,7 +75,7 @@ namespace avto
                         , connectionNewUserInsert);
                         CreateNewUser.ExecuteNonQuery();
                         connectionNewUserInsert.Close();
-                        MessageBox.Show("Вы прошли регистрацию!");
+                        MessageBox.Show("Вы прошли регистрацию! Ураа!!");
 
 
 
