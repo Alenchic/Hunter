@@ -1,0 +1,44 @@
+﻿<Window x:Class="avto.Avtorizaciya"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avto"
+        mc:Ignorable="d"
+        Title="Avtorizaciya" Height="411.876" Width="650.29" ResizeMode="NoResize">
+
+    <Grid
+			
+			 Background="#FF740606" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="185*"/>
+            <ColumnDefinition Width="431*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox     Background="#FFF17D1D"           x:Name="FamKlient_textbox" Margin="13,8,13,9" Grid.Column="1" Grid.Row="1" />
+        <PasswordBox	Background="#FFF17D1D"        x:Name="Pass_box" Grid.Column="1" Margin="13,10,198,11" Grid.Row="4" />
+        <PasswordBox	Background="#FFF17D1D"   	 x:Name="ConfPass_Box" Grid.Column="1" Margin="13,10,198,11" Grid.Row="5" />
+        <TextBox	    Background="#FFF17D1D"        x:Name="NameClient_textbox" Margin="13,8,13,9"  Grid.Column="1" />
+        <TextBox	  	Background="#FFF17D1D"        x:Name="Otch_klient_Textbox" Margin="13,8,13,9"  Grid.Column="1" Grid.Row="2" />
+        <TextBox        Background="#FFF17D1D"        x:Name="PhoneKlient_box" Margin="13,8,163,7" Grid.Column="1" Grid.Row="3" />
+        <Label Content="Введите Имя:" HorizontalContentAlignment="Right" FontSize="19" VerticalContentAlignment="Center"  Grid.Column="0"/>
+        <Label Content="Введите Фамилию:" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"  FontSize="19"  Grid.Row="1" Grid.Column="0" />
+        <Label Content="Введите Отчество:" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"  FontSize="19"  Grid.Row="2" Grid.Column="0"/>
+        <Label Content="Введите Телефон:" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"  FontSize="19"  Grid.Row="3" Grid.Column="0"/>
+        <Label Content="Пароль:" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"  FontSize="19" Grid.Row="4" Grid.Column="0"/>
+        <Label Content="Повторите пароль:" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"  FontSize="19"  Grid.Row="5" Grid.Column="0"/>
+        <Label Content="Логин пользователя:" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"  FontSize="19" Grid.Row="6" Grid.Column="0"/>
+        <Button	Background="#FFF17D1D"   	Grid.Row="7" HorizontalAlignment="Center"	VerticalAlignment="Center"		Content="Зарегистрироваться" x:Name="button2" Height="30" Width="300"  Click="button2_Click" Grid.ColumnSpan="2" />
+        <TextBox Grid.Column="1" Background="#FFF17D1D"   	Grid.Row="6" Margin="13,10,198,11"		x:Name="Login_text" />
+    </Grid>
+</Window>

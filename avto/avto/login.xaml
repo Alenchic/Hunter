@@ -1,0 +1,43 @@
+﻿<Window x:Class="avto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="500" x:Name="window1"
+
+	Closing="window1_Closing_1" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="window1_Loaded">
+    <Grid Background="#FF740606" RenderTransformOrigin="0.492,0.572">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="217*"/>
+            <ColumnDefinition Width="143*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox
+			x:Name="LoginTextBox" Background="#FFF17D1D"	TextAlignment="Center"	VerticalContentAlignment="Center" FontSize="10"	Margin="10,36,10,164" Grid.Row="1" Grid.Column="1" />
+        <PasswordBox
+			x:Name="PasswordBox" Background="#FFF17D1D" Grid.Row="1" 	FontSize="10"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Margin="10,107,10,93" Grid.Column="1" />
+        <Button
+		Background="#FFF17D1D"	Content="Зарегистрироваться"  x:Name="button1" Click="button1_Click" Margin="10,10,0,185"/>
+        <Button
+			Background="#FFF17D1D"	Grid.Column="1"	Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"	Margin="0,0,47,50"	Content="Вход"	x:Name="button3" Click="button3_Click" Width="120" Height="38" />
+
+        <Label
+			x:Name="label" 	Width="258"	Height="46"	Grid.Column="1"	Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,189,0,0" Grid.ColumnSpan="2" />
+        <Label
+			x:Name="labe2"	Width="143" Content="Введите Пароль"	 FontSize="18"	Height="46"	Grid.Column="1"	Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,71,33,0" />
+        <Label
+			x:Name="labe3"	Width="166" Content="Введите Логин"	 FontSize="18" Height="36"	Grid.Column="1"	Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,10,0" />
+        <Button
+			Content="Изменить настройки подключения"  Grid.Column="0" Grid.Row="1"  Margin="10,190,140,4"	x:Name="button2" Click="button2_Click" Grid.ColumnSpan="2" Background="#FFF07510" />
+        <Image Source="лог.png" Grid.Column="1" Margin="0,0,80,164" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Button
+             Grid.Column="2" Background="#FFF17D1D"   Content="Выйти"  x:Name="button4" Click="button4_Click" Margin="0,10,10,185" />
+    </Grid>
+
+</Window>
