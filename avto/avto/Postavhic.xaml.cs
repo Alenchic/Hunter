@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace avto
 {
     /// <summary>
-    /// Логика взаимодействия для Postavhic.xaml
+    /// Логика взаимодействия для Postavhic.xaml тест 2
     /// </summary>
     public partial class Postavhic : Window
     {

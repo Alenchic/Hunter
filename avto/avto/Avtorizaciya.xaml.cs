@@ -25,11 +25,7 @@ namespace avto
         {
             InitializeComponent();
         }
-        void button1_Click(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.ShowDialog();
-        }
+
         void button2_Click(object sender, RoutedEventArgs e)
         {
             switch (Pass_box.Password == ConfPass_Box.Password)
@@ -47,7 +43,7 @@ namespace avto
                     SqlCommand Select_USID = new SqlCommand("select [dbo].[Login].[login]" +
                     " from [dbo].[Login] inner join[dbo].[roli] on " +
                     "[dbo].[Login].[roli_id] =[dbo].[roli].[ID_roli]" +
-                    "where login='" + Login_text.Text + "' and alkogolik_pass='" + Pass_box.Password + "'", connectionNewUser);
+                    "where login='" + Login_text.Text + "' and pass='" + Pass_box.Password + "'", connectionNewUser);
                     try
                     {
                         connectionNewUser.Open();
@@ -57,8 +53,8 @@ namespace avto
                     }
                     catch
                     {
-                        string GuestRole;
-                        int Tel_Value;
+                        string GuestRole; 
+                        //int Tel_Value;
                         SqlConnection connectionNewUserInsert = new SqlConnection(ConCheck.ConnectString);
                         SqlCommand SelectGuestRole = new SqlCommand("select ID_roli from [dbo].[roli] where Role_Name = 'Гость'"
                             , connectionNewUserInsert);
@@ -68,23 +64,44 @@ namespace avto
                         //Tel_Value = Convert.ToInt32(SelectTelNum.ExecuteScalar().ToString());
                         //Tel_Value = Tel_Value + 1;
                         SqlCommand CreateNewUser = new SqlCommand("insert into [dbo].[Login]" +
-                        "([FAM],[IM],[OTCH],[TEL],[Roli_id],[login],[pass])" +
+                        "([IM],[FAM],[OTCH],[TEL],[Roli_id],[login],[pass])" +
                         "values ('" + NameClient_textbox.Text + "','" + FamKlient_textbox.Text + "','" + Otch_klient_Textbox.Text
-                        + "','+7(000)-000-00-" +/*Tel_Value*.ToString()*/"',"
+                        + "','" +Tel_Value.Text+"',"
                         + "'1'" /*GuestRole*/ + ",'" + Login_text.Text + "','" + Pass_box.Password + "')"
                         , connectionNewUserInsert);
                         CreateNewUser.ExecuteNonQuery();
                         connectionNewUserInsert.Close();
-                        MessageBox.Show("Вы прошли регистрацию! Ураа!!");
+                        MessageBox.Show("Вы прошли регистрацию!");
+
+                        //MessageBoxResult.OK:
+                        
+                        //    Application.Current.Shutdown();
+
+
+
 
 
 
                     }
                     break;
+        
                 case (false):
                     MessageBox.Show("Пароли не совпадают, повторите попытку");
                     break;
             }
+        }
+
+        private void Tel_Value_KeyDown(object sender, KeyEventArgs e)
+        {
+            //Tel_Value.MaxLength = 11;
+            //char cir = 
+        }
+
+        private void Tel_Value_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            
+                e.Handled = !Char.IsDigit(e.Text, 0);
+            
         }
     }
 }
