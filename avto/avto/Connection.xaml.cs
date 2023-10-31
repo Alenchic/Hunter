@@ -7,6 +7,11 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+<<<<<<< HEAD
+=======
+using System.Windows.Input;
+
+>>>>>>> 2cf2ad684943c1730ba8926deaeab3d84afc0e97
 namespace avto
 {
     /// <summary>
