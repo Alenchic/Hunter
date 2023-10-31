@@ -35,7 +35,7 @@
         <Label Content="Введите Фамилию:" HorizontalContentAlignment="Right" Foreground="White" VerticalContentAlignment="Center"  FontSize="15"  Grid.Row="1" Grid.Column="0" />
         <Label Content="Введите Отчество:" HorizontalContentAlignment="Right" Foreground="White" VerticalContentAlignment="Center"  FontSize="15"  Grid.Row="2" Grid.Column="0"/>
         <Label Content="Введите Телефон:" HorizontalContentAlignment="Right" Foreground="White" VerticalContentAlignment="Center"  FontSize="15"  Grid.Row="3" Grid.Column="0"/>
-        <Label Content="Пароль:" HorizontalContentAlignment="Right" Foreground="White" VerticalContentAlignment="Center"  FontSize="15" Grid.Row="5" Grid.Column="0"/>
+        <Label Content="Пароль12:" HorizontalContentAlignment="Right" Foreground="White" VerticalContentAlignment="Center"  FontSize="15" Grid.Row="5" Grid.Column="0"/>
         <Label Content="Повторите пароль:" HorizontalContentAlignment="Right" Foreground="White" VerticalContentAlignment="Center"  FontSize="15"  Grid.Row="6" Grid.Column="0"/>
         <Label Content="Логин пользователя:" HorizontalContentAlignment="Right" Foreground="White" VerticalContentAlignment="Center"  FontSize="15" Grid.Row="4" Grid.Column="0"/>
         <Button Background="#FF990944"  	Grid.Row="7" HorizontalAlignment="Center"	VerticalAlignment="Center"	Foreground="White"	Content="Зарегистрироваться" x:Name="button2" Height="30" Width="300"  Click="button2_Click" Grid.ColumnSpan="2" FontSize="15" BorderBrush="#FF990944" />
