@@ -95,10 +95,11 @@ namespace avto
                 " from [dbo].[Login] inner join[dbo].[roli] on " +
                 "[dbo].[Login].[roli_id] =[dbo].[roli].[ID_roli]" +
                 "where login='" + LoginTextBox.Text + "' and pass='" + PasswordBox.Password + "'", connectionUser);
-            //SqlCommand Select_ISA = new SqlCommand("select [dbo].[Party_Role].[IS_Access]" +
-            //  " from [dbo].[Alkogolik] inner join[dbo].[Party_Role] on " +
-            //  "[dbo].[Alkogolik].[Party_Role_id] =[dbo].[Party_Role].[id_Party_Role]" +
-            //  "where alkogolic_log='" + LoginTextBox.Text + "' and alkogolik_pass='" + PasswordBox.Password + "'", connectionUser);
+            SqlCommand Select_ISA = new SqlCommand("select [dbo].[roli].[Role_Name]" +
+              " from [dbo].[Login] inner join[dbo].[roli] on " +
+              "[dbo].[Login].[Roli_id] =[dbo].[roli].[ID_roli]" +
+              "where login='" + LoginTextBox.Text + "' and pass='" + PasswordBox.Password + "'", connectionUser);
+            
             // SqlCommand Select_ALA = new SqlCommand("select [dbo].[Party_Role].[Alkogolik_Access]" +
             //   " from [dbo].[Alkogolik] inner join[dbo].[Party_Role] on " +
             //   "[dbo].[Alkogolik].[Party_Role_id] =[dbo].[Party_Role].[id_Party_Role]" +
@@ -119,7 +120,8 @@ namespace avto
             {
                 connectionUser.Open();
                 USID = Select_USID.ExecuteScalar().ToString();
-                //    ISA = Select_ISA.ExecuteScalar().ToString();
+                ISA = Select_ISA.ExecuteScalar().ToString();
+                MessageBox.Show(ISA);
                 //    ALA = Select_ALA.ExecuteScalar().ToString();
                 //    EOA = Select_EOA.ExecuteScalar().ToString();
                 //    MA = Select_MA.ExecuteScalar().ToString();
@@ -129,7 +131,7 @@ namespace avto
             }
             catch (Exception bl)
             {
-                MessageBox.Show(PasswordBox.Password);
+                MessageBox.Show(bl.Message);
             }
         }
 
@@ -145,7 +147,7 @@ namespace avto
 
         private void window1_Loaded(object sender, RoutedEventArgs e)
         {
-
+ 
             ConnectionClass ConCheck = new ConnectionClass();
             RegistryKey DataBase_Connection = Registry.CurrentConfig;
             RegistryKey Connection_Base_Party_Options = DataBase_Connection.CreateSubKey("DB_PARTY_OPTIOS");
