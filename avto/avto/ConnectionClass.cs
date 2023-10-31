@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace avto
 {
+    //rjvt
     class ConnectionClass
     {
         public string ConnectString;
