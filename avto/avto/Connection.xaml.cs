@@ -17,8 +17,8 @@ using System.Data;
 
 namespace avto
 {
-    /// <summary>
-    /// Логика взаимодействия для Connection.xaml
+    /// <summary> Тест 3
+    /// Логика взаимодействия для Connection.xaml 
     /// </summary>
     public partial class Connection : Window
     {
