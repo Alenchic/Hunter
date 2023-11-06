@@ -9,7 +9,7 @@ using System.Windows;
 namespace avto
 {
     /// <summary>
-    /// Логика взаимодействия для App.xaml
+    /// Логика взаимодействия для App.xaml 1234
     /// </summary>
     public partial class App : Application
     {

@@ -18,7 +18,7 @@ namespace avto
 {
     /// <summary>sfdg
     /// Логика взаимодействия для Avtorizaciya.xaml
-    /// </summary>
+    /// </summary> dsf
     public partial class Avtorizaciya : Window
     {
         public Avtorizaciya()

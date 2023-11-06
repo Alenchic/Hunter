@@ -22,7 +22,7 @@
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="2020*"/>
             <ColumnDefinition Width="300*"/>
         </Grid.ColumnDefinitions>
         <TextBox     Background="#FF8EC6E0"           x:Name="FamKlient_textbox" Margin="13,5,13,5" Grid.Column="1" Grid.Row="1" />
