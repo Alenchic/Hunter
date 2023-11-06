@@ -16,7 +16,7 @@ using System.Data.SqlClient;
 
 namespace avto
 {
-    /// <summary>
+    /// <summary>sfdg
     /// Логика взаимодействия для Avtorizaciya.xaml
     /// </summary>
     public partial class Avtorizaciya : Window
