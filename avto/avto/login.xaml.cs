@@ -21,7 +21,7 @@ using System.Drawing;
 namespace avto
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainWindow.xaml 1
     /// </summary>
     public partial class MainWindow : Window
     {
